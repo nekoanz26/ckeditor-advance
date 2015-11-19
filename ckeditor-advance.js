@@ -1,1 +1,7 @@
-// Write your package code here!
+CKEditor = function(options) {
+    var self = this;
+    
+    this.options = options = _.defaults(options, {
+        
+    });
+};

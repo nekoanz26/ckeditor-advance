@@ -12,11 +12,13 @@ Package.describe({
 
 Package.onUse(function(api) {
     api.versionsFrom('1.2.1');
-    api.use('ecmascript');
+    api.use(['ecmascript','templating']);
 
     api.addFiles([
         'ckeditor.min.js',
         'ckeditor-advance.js',
+        'ckeditor-template.html',
+        'ckeditor-template.js',
     ], 'client');
 
     api.addAssets([
@@ -198,7 +200,7 @@ Package.onUse(function(api) {
     api.addAssets([
         'plugins/clipboard/dialogs/paste.js'
     ], 'client');
-    
+
     /*
      * Plugins - find
      */
