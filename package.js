@@ -15,10 +15,10 @@ Package.onUse(function(api) {
     api.use(['ecmascript','templating']);
 
     api.addFiles([
-        'ckeditor.min.js',
-        'ckeditor-advance.js',
         'ckeditor-template.html',
         'ckeditor-template.js',
+        'ckeditor.min.js',
+        'ckeditor-advance.js',
     ], 'client');
 
     api.addAssets([
