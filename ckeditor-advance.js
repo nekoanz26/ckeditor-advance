@@ -1,7 +1,7 @@
 CKEditor = function(options) {
     var self = this;
     this.options = options = _.defaults(options, {
-        'editor_type' : 'advance'
+        'editor_type'  :    'advance',
+        'className'    :    'ckeditor'
     });
-    console.log(self.editor);
 };

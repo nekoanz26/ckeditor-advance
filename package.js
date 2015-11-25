@@ -1,6 +1,6 @@
 Package.describe({
     name: 'nekoanz:ckeditor-advance',
-    version: '0.0.1',
+    version: '0.1.1',
     // Brief, one-line summary of the package.
     summary: 'CKEditor(advance) wrapper for meteorjs',
     // URL to the Git repository containing the source code for this package.
@@ -12,7 +12,7 @@ Package.describe({
 
 Package.onUse(function(api) {
     api.versionsFrom('1.2.1');
-    api.use(['ecmascript','templating']);
+    api.use(['ecmascript','templating'], 'client');
 
     api.addFiles([
         'ckeditor-template.html',

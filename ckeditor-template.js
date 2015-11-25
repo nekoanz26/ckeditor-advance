@@ -10,6 +10,10 @@ Template.CKEditor.rendered = function () {
     var textarea = document.createElement('textarea');
     textarea.setAttribute('id',id);
     textarea.defaultValue = typeof options.defaultValue !== 'undefined' ? options.defaultValue : '';
+    
+    if(options.className){
+        textarea.className = options.className;
+    }
 
     this.$('.ckeditor-wrapper').append(textarea);
     ckeditor.editor = CKEDITOR.replace(id);
