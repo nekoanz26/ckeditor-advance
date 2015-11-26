@@ -6,11 +6,11 @@ Template.CKEditor.rendered = function () {
     window.CKEDITOR_BASEPATH = "/packages/nekoanz_ckeditor-advance/";
 
     window.CKEDITOR_COUNTER = typeof window.CKEDITOR_COUNTER === 'undefined' ? 0 : window.CKEDITOR_COUNTER + 1;
-    var id = 'ckeditor-'+window.CKEDITOR_COUNTER;
+    var id = options.id ? options.id : 'ckeditor_'+window.CKEDITOR_COUNTER;
     var textarea = document.createElement('textarea');
     textarea.setAttribute('id',id);
     textarea.defaultValue = typeof options.defaultValue !== 'undefined' ? options.defaultValue : '';
-    
+
     if(options.className){
         textarea.className = options.className;
     }
